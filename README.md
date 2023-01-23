@@ -12,3 +12,10 @@ Line and Surface Integrals
   
 There is an effort to calculate general integrals. 
 
+Sources:
+> https://www.sympy.org/en/index.html
+>
+> https://www.python.org/
+>
+> tps://www.pysimplegui.org/en/latest/
+
