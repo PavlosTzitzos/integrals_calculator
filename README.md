@@ -32,16 +32,29 @@ Folders:
 > > General Integrals
 > > 
 > Version written in Python
-> > Double Integrals
-> > 
-> > Triple Integrals
-> > 
-> > Line Integrals
-> > 
-> > Surface Integrals
-> > 
-> > General Integrals
-> > 
+> > source only
+> > > Double Integrals
+> > > 
+> > > Triple Integrals
+> > > 
+> > > Line Integrals
+> > > 
+> > > Surface Integrals
+> > > 
+> > > General Integrals
+> > > 
+> > ready to run
+> > > Double Integrals
+> > > 
+> > > Triple Integrals
+> > > 
+> > > Line Integrals
+> > > 
+> > > Surface Integrals
+> > > 
+> > > General Integrals
+> > > 
+
 > Version written in C#
 
 
