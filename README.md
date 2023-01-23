@@ -17,5 +17,21 @@ Sources:
 >
 > https://www.python.org/
 >
-> tps://www.pysimplegui.org/en/latest/
+> https://www.pysimplegui.org/en/latest/
+
+Folders:
+> Version written in MATLAB
+> Version written in Python
+    > Double Integrals
+    > Triple Integrals
+    > Line Integrals
+    > Surface Integrals
+    > General Integrals
+> Version written in C#
+
+
+
+Other:
+> https://cimi.gr/
+
 
