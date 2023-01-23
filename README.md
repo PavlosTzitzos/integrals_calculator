@@ -21,27 +21,27 @@ Sources:
 
 Folders:
 > Version written in MATLAB
-    > Double Integrals
-    > 
-    > Triple Integrals
-    > 
-    > Line Integrals
-    > 
-    > Surface Integrals
-    > 
-    > General Integrals
-    > 
+> > Double Integrals
+> > 
+> > Triple Integrals
+> > 
+> > Line Integrals
+> > 
+> > Surface Integrals
+> > 
+> > General Integrals
+> > 
 > Version written in Python
-    > Double Integrals
-    > 
-    > Triple Integrals
-    > 
-    > Line Integrals
-    > 
-    > Surface Integrals
-    > 
-    > General Integrals
-    > 
+> > Double Integrals
+> > 
+> > Triple Integrals
+> > 
+> > Line Integrals
+> > 
+> > Surface Integrals
+> > 
+> > General Integrals
+> > 
 > Version written in C#
 
 
