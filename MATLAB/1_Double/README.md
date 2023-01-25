@@ -1,6 +1,6 @@
 Double Integrals:
 -----------------
-Definition: $\int_x \int_y f(x,y) dx dy$
+Definition: $\int \int _D f(x,y) dx dy$
 
 First, focus only to make the double integral into simple integrals of one variable.
 
