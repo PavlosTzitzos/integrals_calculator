@@ -56,15 +56,15 @@ Polar coordinates:
 
 Step 1:
 
-Replace $x$ with $r*\cos(\theta)$ and $y$ with $r*\sin(\theta)$ :
+Replace $x$ with $r \cdot \cos(\theta)$ and $y$ with $r \cdot \sin(\theta)$ :
 
-$x(r,\theta) = r*\cos(\theta)$ and $y(r,\theta) = r*\sin(\theta)$ .
+$x(r,\theta) = r \cdot \cos(\theta)$ and $y(r,\theta) = r \cdot \sin(\theta)$ .
 
 Step 2:
 
 The new function is :
 
-$f(r,\theta) = f( x(r,theta) , y(r,\theta) ) * r$
+$f(r,\theta) = f( x(r,theta) , y(r,\theta) ) \cdot r$
 
 Step 3:
 
