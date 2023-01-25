@@ -20,6 +20,34 @@ Sources:
 > https://www.pysimplegui.org/en/latest/
 
 Folders:
+<html>
+<head>
+<style>
+summary {align-text: 2px;}
+</style>
+</head>
+<body>
+<details>
+<summary>Version written in MATLAB</summary>
+  <p> &emsp; - Double Integrals</p>
+  <p> &emsp; - Triple Integrals</p>
+  <details>
+  <summary>Line Integrals</summary>
+    <p> &emsp; - Vector Function</p>
+    <p> &emsp; - Function</p>
+  </details>
+  <p> &ensp;
+  <details>
+  <summary> &emsp; Surface Integrals</summary>
+    <p> &emsp; - Vector Function</p>
+    <p> &emsp; - Function</p>
+  </details>
+  </p>
+  <p> &emsp; - General Integrals</p>
+</details>
+</body>
+</html>
+
 > Version written in MATLAB
 > > Double Integrals
 > > 
