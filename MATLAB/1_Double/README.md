@@ -70,4 +70,4 @@ Step 3:
 
 Compute integral with respect to $r$ and then to $\theta$ .
 
-$\int_{ \theta _1} ^ {\theta _2} \int _{r_1} ^{r_2} f(r,\theta) dr d\theta $
+$\int_{ \theta _1} ^ {\theta _2} ~(~ \int _{r_1} ^{r_2} f(r,\theta) dr ~)~ d\theta $
