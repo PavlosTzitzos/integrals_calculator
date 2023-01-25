@@ -33,41 +33,37 @@ Folders:
     <li>Surface Integrals</li>
     <li>General Integrals</li>
   </ul>
-  <p> &emsp; - Double Integrals</p>
-  <p> &emsp; - Triple Integrals</p>
-  <p> &emsp; - Line Integrals</p>
-  <p> &emsp; &emsp; > Vector Function</p>
-  <p> &emsp; &emsp; > Function</p>
-  <p> &emsp; - Surface Integrals</p>
-  <p> &emsp; &emsp; > Vector Function</p>
-  <p> &emsp; &emsp; > Function</p>
-  <p> &emsp; - General Integrals</p>
 </details>
 
 <details>
 <summary>Version written in Python</summary>
-  <p> &emsp; - Version with terminal:</p>
-  <p> &emsp; &emsp; - Double Integrals</p>
-  <p> &emsp; &emsp; - Triple Integrals</p>
-  <p> &emsp; &emsp; - Line Integrals</p>
-  <p> &emsp; &emsp; &emsp; > Vector Function</p>
-  <p> &emsp; &emsp; &emsp; > Function</p>
-  <p> &emsp; &emsp; - Surface Integrals</p>
-  <p> &emsp; &emsp; &emsp; > Vector Function</p>
-  <p> &emsp; &emsp; &emsp; > Function</p>
-  <p> &emsp; &emsp; - General Integrals</p>
-  <p> &emsp; - Version with tkinter:</p>
-  <p> &emsp; &emsp; - Double Integrals</p>
-  <p> &emsp; &emsp; - Triple Integrals</p>
-  <p> &emsp; &emsp; - Line Integrals</p>
-  <p> &emsp; &emsp; &emsp; > Vector Function</p>
-  <p> &emsp; &emsp; &emsp; > Function</p>
-  <p> &emsp; &emsp; - Surface Integrals</p>
-  <p> &emsp; &emsp; &emsp; > Vector Function</p>
-  <p> &emsp; &emsp; &emsp; > Function</p>
-  <p> &emsp; &emsp; - General Integrals</p>
-  <p> &emsp; - Version with PySimpleGUI:</p>
-  <p> &emsp; All together</p>
+  <ul>
+    <li>Version with terminal</li>
+    <ul>
+      <li>Double Integrals</li>
+      <li>Triple Integrals</li>
+      <li>Line Integrals</li>
+        <ul>
+          <li>Function</li>
+          <li>Vector Function</li>
+        </ul>
+      <li>Surface Integrals</li>
+      <li>General Integrals</li>
+    </ul>
+    <li>Version with tkinter</li>
+    <ul>
+      <li>Double Integrals</li>
+      <li>Triple Integrals</li>
+      <li>Line Integrals</li>
+        <ul>
+          <li>Function</li>
+          <li>Vector Function</li>
+        </ul>
+      <li>Surface Integrals</li>
+      <li>General Integrals</li>
+    </ul>
+    <li>Version with PySimpleGUI</li>
+  </ul>
 </details>
 
 
