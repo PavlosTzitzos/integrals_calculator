@@ -27,7 +27,9 @@ case 6: $D=$ { $(x,y): a \leq x \leq b ~ and ~ c \leq y \leq y_2 (x)$ }
 
 case 7: $D=$ { $(x,y): a \leq x \leq b ~ and ~ y_1 (x) \leq y \leq y_2 (x)$ }
 
-case 8: $D=$ { $(x,y): x_1 (y) \leq x \leq x_2(y) ~ and ~ y_1 (x) \leq y \leq y_2 (x)$ }
+case 8: $D=$ { $(x,y): x_1 (y) \leq x \leq x_2(y) ~ and ~ y_1 (x) \leq y \leq y_2 (x)$ } 
+
+** Note : case 8 is not implemented in the code cause there is no analytical method to solve such an integral when all limits of x and y depend on each other.
 
 Step 2:
 
@@ -46,8 +48,6 @@ case 5: $\int_a ^b ( \int_{y_1 (x)} ^d f(x,y) dy ) dx$
 case 6: $\int_a ^b ( \int_c ^{y_2 (x)} f(x,y) dy ) dx$
 
 case 7: $\int_a ^b ( \int_{y_1 (x)} ^{y_2 (x)} f(x,y) dy ) dx$
-
-case 8: $\int_{x_1 (y)} ^{x_2 (y)} ( \int_{y_1 (x)} ^{y_2 (x)} f(x,y) dy ) dx$
 
 Then compute the integrals.
 
