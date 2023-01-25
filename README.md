@@ -20,69 +20,55 @@ Sources:
 > https://www.pysimplegui.org/en/latest/
 
 Folders:
-<html>
-<head>
-<style>
-summary {align-text: 2px;}
-</style>
-</head>
-<body>
 <details>
 <summary>Version written in MATLAB</summary>
+  <ul>
+    <li>Double Integrals</li>
+    <li>Triple Integrals</li>
+    <li>Line Integrals</li>
+      <ul>
+        <li>Function</li>
+        <li>Vector Function</li>
+      </ul>
+    <li>Surface Integrals</li>
+    <li>General Integrals</li>
+  </ul>
   <p> &emsp; - Double Integrals</p>
   <p> &emsp; - Triple Integrals</p>
-  <details>
-  <summary>Line Integrals</summary>
-    <p> &emsp; - Vector Function</p>
-    <p> &emsp; - Function</p>
-  </details>
-  <p> &ensp;
-  <details>
-  <summary> &emsp; Surface Integrals</summary>
-    <p> &emsp; - Vector Function</p>
-    <p> &emsp; - Function</p>
-  </details>
-  </p>
+  <p> &emsp; - Line Integrals</p>
+  <p> &emsp; &emsp; > Vector Function</p>
+  <p> &emsp; &emsp; > Function</p>
+  <p> &emsp; - Surface Integrals</p>
+  <p> &emsp; &emsp; > Vector Function</p>
+  <p> &emsp; &emsp; > Function</p>
   <p> &emsp; - General Integrals</p>
 </details>
-</body>
-</html>
 
-> Version written in MATLAB
-> > Double Integrals
-> > 
-> > Triple Integrals
-> > 
-> > Line Integrals
-> > 
-> > Surface Integrals
-> > 
-> > General Integrals
-> > 
-> Version written in Python
-> > source only
-> > > Double Integrals
-> > > 
-> > > Triple Integrals
-> > > 
-> > > Line Integrals
-> > > 
-> > > Surface Integrals
-> > > 
-> > > General Integrals
-> > > 
-> > ready to run
-> > > Double Integrals
-> > > 
-> > > Triple Integrals
-> > > 
-> > > Line Integrals
-> > > 
-> > > Surface Integrals
-> > > 
-> > > General Integrals
-> > > 
-
+<details>
+<summary>Version written in Python</summary>
+  <p> &emsp; - Version with terminal:</p>
+  <p> &emsp; &emsp; - Double Integrals</p>
+  <p> &emsp; &emsp; - Triple Integrals</p>
+  <p> &emsp; &emsp; - Line Integrals</p>
+  <p> &emsp; &emsp; &emsp; > Vector Function</p>
+  <p> &emsp; &emsp; &emsp; > Function</p>
+  <p> &emsp; &emsp; - Surface Integrals</p>
+  <p> &emsp; &emsp; &emsp; > Vector Function</p>
+  <p> &emsp; &emsp; &emsp; > Function</p>
+  <p> &emsp; &emsp; - General Integrals</p>
+  <p> &emsp; - Version with tkinter:</p>
+  <p> &emsp; &emsp; - Double Integrals</p>
+  <p> &emsp; &emsp; - Triple Integrals</p>
+  <p> &emsp; &emsp; - Line Integrals</p>
+  <p> &emsp; &emsp; &emsp; > Vector Function</p>
+  <p> &emsp; &emsp; &emsp; > Function</p>
+  <p> &emsp; &emsp; - Surface Integrals</p>
+  <p> &emsp; &emsp; &emsp; > Vector Function</p>
+  <p> &emsp; &emsp; &emsp; > Function</p>
+  <p> &emsp; &emsp; - General Integrals</p>
+  <p> &emsp; - Version with PySimpleGUI:</p>
+  <p> &emsp; All together</p>
+</details>
 
 
 Other:
