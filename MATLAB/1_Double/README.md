@@ -64,7 +64,7 @@ Step 2:
 
 The new function is :
 
-$f(r,\theta) = f( x(r,theta) , y(r,\theta) ) \cdot r$
+$f(r,\theta) = f( x(r,\theta) , y(r,\theta) ) \cdot r$
 
 Step 3:
 
