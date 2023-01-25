@@ -2,7 +2,14 @@ Double Integrals:
 -----------------
 Definition: $\int \int _D f(x,y) dx dy$
 
-First, focus only to make the double integral into simple integrals of one variable.
+Cartesian Coordinates:
+----------------------
+
+Initally:
+
+Focus only to make the double integral into simple integrals of one variable.
+
+Step 1:
 
 If $D$ is known then choose the apropriate case:
 
@@ -21,6 +28,8 @@ case 6: $D=$ { $(x,y): a \leq x \leq b ~ and ~ c \leq y \leq y_2 (x)$ }
 case 7: $D=$ { $(x,y): a \leq x \leq b ~ and ~ y_1 (x) \leq y \leq y_2 (x)$ }
 
 case 8: $D=$ { $(x,y): x_1 (y) \leq x \leq x_2(y) ~ and ~ y_1 (x) \leq y \leq y_2 (x)$ }
+
+Step 2:
 
 Then decide the series of integration:
 
@@ -42,5 +51,23 @@ case 8: $\int_{x_1 (y)} ^{x_2 (y)} ( \int_{y_1 (x)} ^{y_2 (x)} f(x,y) dy ) dx$
 
 Then compute the integrals.
 
-For polar coordinates:
+Polar coordinates:
+------------------
 
+Step 1:
+
+Replace $x$ with $r*\cos(\theta)$ and $y$ with $r*\sin(\theta)$ :
+
+$x(r,\theta) = r*\cos(\theta)$ and $y(r,\theta) = r*\sin(\theta)$ .
+
+Step 2:
+
+The new function is :
+
+$f(r,\theta) = f( x(r,theta) , y(r,\theta) ) * r$
+
+Step 3:
+
+Compute integral with respect to $r$ and then to $\theta$ .
+
+$\int_{ \theta _1} ^ {\theta _2} \int _{r_1} ^{r_2} f(r,\theta) dr d\theta $
