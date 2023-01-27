@@ -13,11 +13,13 @@ Features:
 * There is an effort to calculate general integrals. 
 
 Sources:
-> https://www.sympy.org/en/index.html
+> https://tutorial.math.lamar.edu/ : tutorial
+> 
+> https://www.sympy.org/en/index.html : for symbolic computations
 >
-> https://www.python.org/
+> https://www.python.org/ : for main
 >
-> https://www.pysimplegui.org/en/latest/
+> https://www.pysimplegui.org/en/latest/ : for advanced GUI 
 
 Folders:
 <details>
