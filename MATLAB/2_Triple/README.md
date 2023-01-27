@@ -50,8 +50,8 @@ Cartesian Coordinates:
 
 
 
-Polar coordinates:
-------------------
+Spherical Coordinates:
+----------------------
 
 **A.** For center of transformation $O(0,0)$ :
 
@@ -94,7 +94,7 @@ Polar coordinates:
 &emsp; &emsp; $\int_{ \theta _1} ^ {\theta _2} ( \int _{r_1} ^{r_2} f(r,\theta) dr ) d\theta $
 
 
-Elliptical Coordinates:
+Cylindical Coordinates:
 -----------------------
 
 **A.** For center of transformation $O(0,0)$ :
@@ -138,4 +138,15 @@ Elliptical Coordinates:
 &emsp; &emsp; $\int_{ \theta _1} ^ {\theta _2} ( \int _{r_1} ^{r_2} f(r,\theta) dr ) d\theta $
 
 
+Ellipsoide Coordinates:
+-----------------------
+
+
+
+Paraboiled Coordinates:
+----------------------
+
+
+Conic Coordinates:
+------------------
 
