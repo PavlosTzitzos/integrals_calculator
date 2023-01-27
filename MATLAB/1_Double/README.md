@@ -71,3 +71,30 @@ Step 3:
 Compute integral with respect to $r$ and then to $\theta$ .
 
 $\int_{ \theta _1} ^ {\theta _2} ( \int _{r_1} ^{r_2} f(r,\theta) dr ) d\theta $
+
+
+Elliptical Coordinates:
+-----------------------
+
+Step 1:
+
+Replace $x$ with $a \cdot r \cdot \cos(\theta)$ and $y$ with $b \cdot r \cdot \sin(\theta)$ :
+
+$x(r,\theta) = a \cdot r \cdot \cos(\theta)$ and $y(r,\theta) = b \cdot r \cdot \sin(\theta)$ .
+
+Step 2:
+
+The new function is :
+
+$f(r,\theta) = f( x(r,\theta) , y(r,\theta) ) \cdot r \cdot a \cdot b$
+
+Step 3:
+
+Compute integral with respect to $r$ and then to $\theta$ .
+
+$\int_{ \theta _1} ^ {\theta _2} ( \int _{r_1} ^{r_2} f(r,\theta) dr ) d\theta $
+
+
+
+
+
