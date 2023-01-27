@@ -4,9 +4,9 @@ Tkinter version:
 
 To run these files you need:
 * An editor ( eg VSCode , Anaconda , PyCharm , python editor: tested in all four , or another of your choice )
-* python ( latest version )
-* sympy ( latest version )
-* tkinter ( check version )
+* python ( latest version ) : https://www.python.org/downloads/
+* sympy ( latest version ) : https://www.sympy.org/en/index.html
+* tkinter ( check version ) : https://docs.python.org/3/library/tkinter.html#
 
 1. Choose a file to use.
 
