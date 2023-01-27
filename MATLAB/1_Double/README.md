@@ -55,7 +55,7 @@ Then compute the integrals.
 Polar coordinates:
 ------------------
 
-A. For center of transformation $O(0,0)$ :
+**A.** For center of transformation $O(0,0)$ :
 
 <ins>Step 1:</ins>
 
@@ -75,7 +75,7 @@ A. For center of transformation $O(0,0)$ :
 
 &emsp; &emsp; $\int_{ \theta _1} ^ {\theta _2} ( \int _{r_1} ^{r_2} f(r,\theta) dr ) d\theta $
 
-B. For center of transformation $K(x_K,y_K)$ :
+**B.** For center of transformation $K(x_K,y_K)$ :
 
 <ins>Step 1:</ins>
 
@@ -99,7 +99,7 @@ B. For center of transformation $K(x_K,y_K)$ :
 Elliptical Coordinates:
 -----------------------
 
-A. For center of transformation $O(0,0)$ :
+**A.** For center of transformation $O(0,0)$ :
 
 <ins>Step 1:</ins>
 
@@ -119,7 +119,7 @@ A. For center of transformation $O(0,0)$ :
 
 &emsp; &emsp; $\int_{ \theta _1} ^ {\theta _2} ( \int _{r_1} ^{r_2} f(r,\theta) dr ) d\theta $
 
-B. For center of transformation $K(x_K,y_K)$ :
+**B.** For center of transformation $K(x_K,y_K)$ :
 
 <ins>Step 1:</ins>
 
