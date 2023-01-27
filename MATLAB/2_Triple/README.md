@@ -12,47 +12,47 @@ Cartesian Coordinates:
 
 &emsp; &emsp; Focus only to make the triple integral into simple integrals of one variable.
 
+&emsp; &emsp; Suppose that $x_1 , x_2 , y_1 , y_2 , z_1 , z_2\in R$ ,
+
+&emsp; &emsp; $x_1(y)$ and $x_2(y)$ are functions of $y$ ( $x=f(y)$ ) , 
+
+&emsp; &emsp; $x_1(z)$ and $x_2(z)$ are functions of $z$ ( $x=f(z)$ ) , 
+
+&emsp; &emsp; $y_1(x)$ and $y_2(x)$ are functions of $x$ ( $y=f(x)$ ) , 
+
+&emsp; &emsp; $y_1(z)$ and $y_2(z)$ are functions of $z$ ( $y=f(z)$ ) , 
+
+&emsp; &emsp; $z_1(x)$ and $z_2(x)$ are functions of $x$ ( $z=f(x)$ ) , 
+
+&emsp; &emsp; $z_1(y)$ and $z_2(y)$ are functions of $y$ ( $z=f(y)$ ) , 
+
+&emsp; &emsp; $x_1(y,z)$ and $x_2(y,z)$ are functions of $y$ and $z$ ( $x=f(y,z)$ ) , 
+
+&emsp; &emsp; $y_1(x,z)$ and $y_2(x,z)$ are functions of $x$ and $z$( $y=f(x,z)$ ) , 
+
+&emsp; &emsp; $z_1(x,y)$ and $z_2(x,y)$ are functions of $x$ and $y$ ( $z=f(x,y)$ ) .
+
 <ins>Step 1:</ins>
 
-&emsp; &emsp; If $D$ is known then choose the apropriate case:
+&emsp; &emsp; If $A$ is known then choose the apropriate case:
 
-&emsp; &emsp; case 1: &emsp; &emsp; $D=$ { $(x,y\): a \leq x \leq b ~ and ~ c \leq y \leq d$ }
+&emsp; &emsp; case 1: &emsp; &emsp; $A=$ { $(x,y,z): x_1 \leq x \leq x_2 ~ and ~ y_1 \leq y \leq y_2 ~ and ~ z_1 \leq z \leq z_2$ }
 
-&emsp; &emsp; case 2: &emsp; &emsp; $D=$ { $(x,y): a \leq x \leq x_2 (y) ~ and ~ c \leq y \leq d$ }
+&emsp; &emsp; case 2: &emsp; &emsp; $A=$ { $(x,y,z): (x,y) \in D ~ and ~ z_1(x,y) \leq z \leq z_2(x,y)$ }
 
-&emsp; &emsp; case 3: &emsp; &emsp; $D=$ { $(x,y): x_1 (y) \leq x \leq b ~ and ~ c \leq y \leq d$ }
+&emsp; &emsp; case 3: &emsp; &emsp; $A=$ { $(x,y,z): (x,z) in D ~ and ~ y_1(x,z) \leq y \leq y_2(x,z)$ }
 
-&emsp; &emsp; case 4: &emsp; &emsp; $D=$ { $(x,y): x_1 (y) \leq x \leq x_2 (y) ~ and ~ c \leq y \leq d$ }
+&emsp; &emsp; case 4: &emsp; &emsp; $A=$ { $(x,y,z): (y,z) in D ~ and ~ x_1(y,z) \leq x \leq x_2(y,z)$ }
 
-&emsp; &emsp; case 5: &emsp; &emsp; $D=$ { $(x,y): a \leq x \leq b ~ and ~ y_1 (x) \leq y \leq d$ }
-
-&emsp; &emsp; case 6: &emsp; &emsp; $D=$ { $(x,y): a \leq x \leq b ~ and ~ c \leq y \leq y_2 (x)$ }
-
-&emsp; &emsp; case 7: &emsp; &emsp; $D=$ { $(x,y): a \leq x \leq b ~ and ~ y_1 (x) \leq y \leq y_2 (x)$ }
-
-&emsp; &emsp; case 8: &emsp; &emsp; $D=$ { $(x,y): x_1 (y) \leq x \leq x_2(y) ~ and ~ y_1 (x) \leq y \leq y_2 (x)$ } 
-
-** Note : case 8 is not implemented in the code cause there is no analytical method to solve such an integral when all limits of x and y depend on each other.
+** Note : these are the only cases that have an analytical solution.
 
 <ins>Step 2:</ins>
 
-&emsp; &emsp; Then decide the series of integration:
+&emsp; &emsp; Integrate according to the case.
 
-&emsp; &emsp; case 1: &emsp; &emsp; $\int_a ^b ( \int_c ^d f(x,y) dy ) dx$
+<ins>Step 3:</ins>
 
-&emsp; &emsp; case 2: &emsp; &emsp; $\int_c ^d ( \int_a ^{x_2 (y)} f(x,y) dx ) dy$
-
-&emsp; &emsp; case 3: &emsp; &emsp; $\int_c ^d ( \int_{x_1 (y)} ^b f(x,y) dx ) dy$
-
-&emsp; &emsp; case 4: &emsp; &emsp; $\int_c ^d ( \int_{x_1 (y)} ^{x_2 (y)} f(x,y) dx ) dy$
-
-&emsp; &emsp; case 5: &emsp; &emsp; $\int_a ^b ( \int_{y_1 (x)} ^d f(x,y) dy ) dx$
-
-&emsp; &emsp; case 6: &emsp; &emsp; $\int_a ^b ( \int_c ^{y_2 (x)} f(x,y) dy ) dx$
-
-&emsp; &emsp; case 7: &emsp; &emsp; $\int_a ^b ( \int_{y_1 (x)} ^{y_2 (x)} f(x,y) dy ) dx$
-
-Then compute the integrals.
+&emsp; &emsp; Use double integral for the other 2 variables.
 
 
 Polar coordinates:
