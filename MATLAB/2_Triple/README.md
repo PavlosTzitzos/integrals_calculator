@@ -6,29 +6,15 @@ Definition: $\int \int \int _A f(x,y,z) dx dy dz$
 Cartesian Coordinates:
 ----------------------
 
-**Method 1 :**
-
 <ins>Initially:</ins>
 
 &emsp; &emsp; Focus only to make the triple integral into simple integrals of one variable.
 
 &emsp; &emsp; Suppose that $x_1 , x_2 , y_1 , y_2 , z_1 , z_2\in R$ ,
 
-&emsp; &emsp; $x_1(y)$ and $x_2(y)$ are functions of $y$ ( $x=f(y)$ ) , 
-
-&emsp; &emsp; $x_1(z)$ and $x_2(z)$ are functions of $z$ ( $x=f(z)$ ) , 
-
-&emsp; &emsp; $y_1(x)$ and $y_2(x)$ are functions of $x$ ( $y=f(x)$ ) , 
-
-&emsp; &emsp; $y_1(z)$ and $y_2(z)$ are functions of $z$ ( $y=f(z)$ ) , 
-
-&emsp; &emsp; $z_1(x)$ and $z_2(x)$ are functions of $x$ ( $z=f(x)$ ) , 
-
-&emsp; &emsp; $z_1(y)$ and $z_2(y)$ are functions of $y$ ( $z=f(y)$ ) , 
-
 &emsp; &emsp; $x_1(y,z)$ and $x_2(y,z)$ are functions of $y$ and $z$ ( $x=f(y,z)$ ) , 
 
-&emsp; &emsp; $y_1(x,z)$ and $y_2(x,z)$ are functions of $x$ and $z$( $y=f(x,z)$ ) , 
+&emsp; &emsp; $y_1(x,z)$ and $y_2(x,z)$ are functions of $x$ and $z$( $y=f(x,z)$ ) and
 
 &emsp; &emsp; $z_1(x,y)$ and $z_2(x,y)$ are functions of $x$ and $y$ ( $z=f(x,y)$ ) .
 
@@ -40,9 +26,9 @@ Cartesian Coordinates:
 
 &emsp; &emsp; case 2: &emsp; &emsp; $A=$ { $(x,y,z): (x,y) \in D ~ and ~ z_1(x,y) \leq z \leq z_2(x,y)$ }
 
-&emsp; &emsp; case 3: &emsp; &emsp; $A=$ { $(x,y,z): (x,z) in D ~ and ~ y_1(x,z) \leq y \leq y_2(x,z)$ }
+&emsp; &emsp; case 3: &emsp; &emsp; $A=$ { $(x,y,z): (x,z) \in D ~ and ~ y_1(x,z) \leq y \leq y_2(x,z)$ }
 
-&emsp; &emsp; case 4: &emsp; &emsp; $A=$ { $(x,y,z): (y,z) in D ~ and ~ x_1(y,z) \leq x \leq x_2(y,z)$ }
+&emsp; &emsp; case 4: &emsp; &emsp; $A=$ { $(x,y,z): (y,z) \in D ~ and ~ x_1(y,z) \leq x \leq x_2(y,z)$ }
 
 ** Note : these are the only cases that have an analytical solution.
 
@@ -50,9 +36,18 @@ Cartesian Coordinates:
 
 &emsp; &emsp; Integrate according to the case.
 
+&emsp; &emsp; case 1: &emsp; &emsp; $\int$
+
+&emsp; &emsp; case 2: &emsp; &emsp; $\int_{z_1(x,y)} ^{z_2(x,y)} f(x,y,z) dz$
+
+&emsp; &emsp; case 3: &emsp; &emsp; $\int_{y_1(x,z)} ^{y_2(x,z)} f(x,y,z) dy$
+
+&emsp; &emsp; case 4: &emsp; &emsp; $\int_{x_1(y,z)} ^{x_2(y,z)} f(x,y,z) dx$
+
 <ins>Step 3:</ins>
 
 &emsp; &emsp; Use double integral for the other 2 variables.
+
 
 
 Polar coordinates:
