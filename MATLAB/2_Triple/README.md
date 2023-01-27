@@ -36,13 +36,13 @@ Cartesian Coordinates:
 
 &emsp; &emsp; Integrate according to the case.
 
-&emsp; &emsp; case 1: &emsp; &emsp; $\int$
+&emsp; &emsp; case 1: &emsp; &emsp; $\int_{x_1} ^{x_2} ( \int_{y_1} ^{y_2} ( \int_{z_1} ^{z_2} f(x,y,z) dz ) dy ) dz$
 
-&emsp; &emsp; case 2: &emsp; &emsp; $\int_{z_1(x,y)} ^{z_2(x,y)} f(x,y,z) dz$
+&emsp; &emsp; case 2: &emsp; &emsp; $I_1 = \int_{z_1(x,y)} ^{z_2(x,y)} f(x,y,z) dz$
 
-&emsp; &emsp; case 3: &emsp; &emsp; $\int_{y_1(x,z)} ^{y_2(x,z)} f(x,y,z) dy$
+&emsp; &emsp; case 3: &emsp; &emsp; $I_1 = \int_{y_1(x,z)} ^{y_2(x,z)} f(x,y,z) dy$
 
-&emsp; &emsp; case 4: &emsp; &emsp; $\int_{x_1(y,z)} ^{x_2(y,z)} f(x,y,z) dx$
+&emsp; &emsp; case 4: &emsp; &emsp; $I_1 = \int_{x_1(y,z)} ^{x_2(y,z)} f(x,y,z) dx$
 
 <ins>Step 3:</ins>
 
