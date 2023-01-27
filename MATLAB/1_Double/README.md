@@ -9,6 +9,12 @@ Cartesian Coordinates:
 
 &emsp; &emsp; Focus only to make the double integral into simple integrals of one variable.
 
+&emsp; &emsp; Suppose that $a , b , c ,d \in R$ ,
+
+&emsp; &emsp; $x_1(y)$ and $x_2(y)$ are functions of $y$ ( $x=f(y)$ ) and 
+
+&emsp; &emsp; $y_1(x)$ and $y_2(x)$ are functions of $x$ ( $y=f(x)$ ) .
+
 <ins>Step 1:</ins>
 
 &emsp; &emsp; If $D$ is known then choose the apropriate case:
