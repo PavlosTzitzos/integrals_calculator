@@ -167,7 +167,7 @@ Ellipsoide Coordinates:
 
 &emsp; &emsp; The new function is :
 
-&emsp; &emsp; $f(r,\theta , \phi) = f( x(r,\theta , \phi) , y(r,\theta , \phi) , z(r,\theta , \phi) ) a \cdot b \cdot c \cdot r^2 \cdot sin( \theta)$
+&emsp; &emsp; $f(r,\theta , \phi) = f( x(r,\theta , \phi) , y(r,\theta , \phi) , z(r,\theta , \phi) ) \cdot a \cdot b \cdot c \cdot r^2 \cdot sin( \theta)$
 
 <ins>Step 3:</ins>
 
@@ -191,7 +191,7 @@ Ellipsoide Coordinates:
 
 &emsp; &emsp; The new function is :
 
-&emsp; &emsp; $f(r,\theta , \phi) = f( x(r,\theta , \phi) , y(r,\theta , \phi) , z(r,\theta , \phi) ) a \cdot b \cdot c \cdot r^2 \cdot sin( \theta)$
+&emsp; &emsp; $f(r,\theta , \phi) = f( x(r,\theta , \phi) , y(r,\theta , \phi) , z(r,\theta , \phi) ) \cdot a \cdot b \cdot c \cdot r^2 \cdot sin( \theta)$
 
 <ins>Step 3:</ins>
 
