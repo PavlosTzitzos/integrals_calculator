@@ -149,6 +149,56 @@ Cylindical Coordinates:
 Ellipsoide Coordinates:
 -----------------------
 
+** Note: the only simple difference with spherical coordinates are the a , b and c parameters of the ellipsoid.
+
+**A.** For center of transformation $O(0,0)$ :
+
+<ins>Step 1:</ins>
+
+&emsp; &emsp; Replace :
+
+&emsp; &emsp; $x(r,\theta , \phi) = a \cdot r \cdot \sin(\theta) \cdot \cos(\phi)$ , 
+
+&emsp; &emsp; $y(r,\theta , \phi) = b \cdot r \cdot  \sin(\theta) \cdot \sin(\phi)$ , 
+
+&emsp; &emsp; $z(r,\theta , \phi) = c \cdot r \cdot  \cos(\theta)$ .
+
+<ins>Step 2:</ins>
+
+&emsp; &emsp; The new function is :
+
+&emsp; &emsp; $f(r,\theta , \phi) = f( x(r,\theta , \phi) , y(r,\theta , \phi) , z(r,\theta , \phi) ) a \cdot b \cdot c \cdot r^2 \cdot sin( \theta)$
+
+<ins>Step 3:</ins>
+
+&emsp; &emsp; Compute integral with respect to $r$ , then to $\theta$ and then to $\phi$.
+
+&emsp; &emsp; $\int_{ \phi_1} ^{ \phi_2} ( \int_{ \theta _1} ^ {\theta _2} ( \int _{r_1} ^{r_2} f(r,\theta,\phi) dr ) d\theta ) d\phi$
+
+**B.** For center of transformation $K(x_K,y_K,z_K)$ :
+
+<ins>Step 1:</ins>
+
+&emsp; &emsp; Replace :
+
+&emsp; &emsp; $x(r,\theta , \phi) = a \cdot r \cdot \sin(\theta) \cdot \cos(phi) + x_K$ , 
+
+&emsp; &emsp; $y(r,\theta , \phi) = b \cdot r \cdot \sin(\theta) \cdot \sin(phi) + y_K$ , 
+
+&emsp; &emsp; $z(r,\theta , \phi) = c \cdot r \cdot \cos(\theta) + z_K$ .
+
+<ins>Step 2:</ins>
+
+&emsp; &emsp; The new function is :
+
+&emsp; &emsp; $f(r,\theta , \phi) = f( x(r,\theta , \phi) , y(r,\theta , \phi) , z(r,\theta , \phi) ) a \cdot b \cdot c \cdot r^2 \cdot sin( \theta)$
+
+<ins>Step 3:</ins>
+
+&emsp; &emsp; Compute integral with respect to $r$ , then to $\theta$ and then to $\phi$.
+
+&emsp; &emsp; $\int_{ \phi_1} ^{ \phi_2} ( \int_{ \theta _1} ^ {\theta _2} ( \int _{r_1} ^{r_2} f(r,\theta,\phi) dr ) d\theta ) d\phi$
+
 
 
 Paraboiled Coordinates:
