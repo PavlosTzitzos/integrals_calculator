@@ -57,29 +57,37 @@ Spherical Coordinates:
 
 <ins>Step 1:</ins>
 
-&emsp; &emsp; Replace $x$ with $r \cdot \cos(\theta)$ and $y$ with $r \cdot \sin(\theta)$ :
+&emsp; &emsp; Replace :
 
-&emsp; &emsp; $x(r,\theta) = r \cdot \cos(\theta)$ and $y(r,\theta) = r \cdot \sin(\theta)$ .
+&emsp; &emsp; $x(r,\theta , \phi) = r \cdot \sin(\theta) \cdot \cos(phi)$ , 
+
+&emsp; &emsp; $y(r,\theta , \phi) = r \cdot \sin(\theta) \cdot \sin(phi)$ , 
+
+&emsp; &emsp; $z(r,\theta , \phi) = r \cdot \cos(\theta)$ .
 
 <ins>Step 2:</ins>
 
 &emsp; &emsp; The new function is :
 
-&emsp; &emsp; $f(r,\theta) = f( x(r,\theta) , y(r,\theta) ) \cdot r$
+&emsp; &emsp; $f(r,\theta , \phi) = f( x(r,\theta , \phi) , y(r,\theta , \phi) , z(r,\theta , \phi) ) \cdot r^2 \cdot sin( \theta)$
 
 <ins>Step 3:</ins>
 
-&emsp; &emsp; Compute integral with respect to $r$ and then to $\theta$ .
+&emsp; &emsp; Compute integral with respect to $r$ , then to $\theta$ and then to $\phi$.
 
-&emsp; &emsp; $\int_{ \theta _1} ^ {\theta _2} ( \int _{r_1} ^{r_2} f(r,\theta) dr ) d\theta $
+&emsp; &emsp; $\int_{ \phi_1} ^{ \phi_2} ( \int_{ \theta _1} ^ {\theta _2} ( \int _{r_1} ^{r_2} f(r,\theta,\phi) dr ) d\theta ) d\phi$
 
-**B.** For center of transformation $K(x_K,y_K)$ :
+**B.** For center of transformation $K(x_K,y_K,z_K)$ :
 
 <ins>Step 1:</ins>
 
-&emsp; &emsp; Replace $x$ with $r \cdot \cos(\theta) + x_K$ and $y$ with $r \cdot \sin(\theta) + y_K$ :
+&emsp; &emsp; Replace :
 
-&emsp; &emsp; $x(r,\theta) = r \cdot \cos(\theta) + x_K$ and $y(r,\theta) = r \cdot \sin(\theta) + y_K$ .
+&emsp; &emsp; $x(r,\theta , \phi) = r \cdot \sin(\theta) \cdot \cos(phi) + x_K$ , 
+
+&emsp; &emsp; $y(r,\theta , \phi) = r \cdot \sin(\theta) \cdot \sin(phi) + y_K$ , 
+
+&emsp; &emsp; $z(r,\theta , \phi) = r \cdot \cos(\theta) + z_K$ .
 
 <ins>Step 2:</ins>
 
