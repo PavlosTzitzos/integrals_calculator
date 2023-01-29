@@ -111,43 +111,47 @@ Cylindical Coordinates:
 
 &emsp; &emsp; Replace :
 
-&emsp; &emsp; $x(\rho , \phi , \z) = rho \cdot \cos(\phi)$ , 
+&emsp; &emsp; $x(\rho , \phi , z) = rho \cdot \cos(\phi)$ , 
 
-&emsp; &emsp; $y(\rho , \phi , \z) = rho \cdot \sin(\phi)$ , 
+&emsp; &emsp; $y(\rho , \phi , z) = rho \cdot \sin(\phi)$ , 
 
-&emsp; &emsp; $z(\rho , \phi , \z) = z$ .
+&emsp; &emsp; $z(\rho , \phi , z) = z$ .
 
 <ins>Step 2:</ins>
 
 &emsp; &emsp; The new function is :
 
-&emsp; &emsp; $f(\rho,\phi,z) = f( x(r,\theta) , y(r,\theta) ) \cdot r \cdot a \cdot b$
+&emsp; &emsp; $f(\rho,\phi,z) = f( x(\rho , \phi , z) , y(\rho , \phi , z) , z(\rho , \phi , z) ) \cdot \rho $
 
 <ins>Step 3:</ins>
 
-&emsp; &emsp; Compute integral with respect to $r$ and then to $\theta$ .
+&emsp; &emsp; Compute integral with respect to $\rho$ , then $\phi$ and then $z$ :
 
-&emsp; &emsp; $\int_{ \theta _1} ^ {\theta _2} ( \int _{r_1} ^{r_2} f(r,\theta) dr ) d\theta $
+&emsp; &emsp; $\int_{ z_1} ^ { z_2} ( \int _{ \phi _1} ^{ \phi _2} ( \int_{ \rho _1} ^{ \rho _2} f( \rho , \phi , \z ) d\rho ) d\phi ) dz$ .
 
 **B.** For center of transformation $K(x_K,y_K)$ :
 
 <ins>Step 1:</ins>
 
-&emsp; &emsp; Replace $x$ with $a \cdot r \cdot \cos(\theta) + x_K$ and $y$ with $b \cdot r \cdot \sin(\theta) + y_K$ :
+&emsp; &emsp; Replace :
 
-&emsp; &emsp; $x(r,\theta) = a \cdot r \cdot \cos(\theta) + x_K$ and $y(r,\theta) = b \cdot r \cdot \sin(\theta) + y_K$ .
+&emsp; &emsp; $x(\rho , \phi , z) = rho \cdot \cos(\phi) + x_K$ , 
+
+&emsp; &emsp; $y(\rho , \phi , z) = rho \cdot \sin(\phi) + y_K$ , 
+
+&emsp; &emsp; $z(\rho , \phi , z) = z + z_K$ .
 
 <ins>Step 2:</ins>
 
 &emsp; &emsp; The new function is :
 
-&emsp; &emsp; $f(r,\theta) = f( x(r,\theta) , y(r,\theta) ) \cdot r \cdot a \cdot b$
+&emsp; &emsp; $f(\rho,\phi,z) = f( x(\rho , \phi , z) , y(\rho , \phi , z) , z(\rho , \phi , z) ) \cdot \rho$
 
 <ins>Step 3:</ins>
 
-&emsp; &emsp; Compute integral with respect to $r$ and then to $\theta$ .
+&emsp; &emsp; Compute integral with respect to $\rho$ , then $\phi$ and then $z$ :
 
-&emsp; &emsp; $\int_{ \theta _1} ^ {\theta _2} ( \int _{r_1} ^{r_2} f(r,\theta) dr ) d\theta $
+&emsp; &emsp; $\int_{ z_1} ^ { z_2} ( \int _{ \phi _1} ^{ \phi _2} ( \int_{ \rho _1} ^{ \rho _2} f( \rho , \phi , \z ) d\rho ) d\phi ) dz$ .
 
 
 Ellipsoide Coordinates:
