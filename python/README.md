@@ -2,4 +2,18 @@
 Version written in python:
 --------------------------
 
-One
+Folder: 
+
+* examples: 
+
+** Note: example output pictures
+
+* tkinter version:
+
+** Note: separeted applications
+
+* pysimplegui version:
+
+** Note: all-in-one application
+
+
