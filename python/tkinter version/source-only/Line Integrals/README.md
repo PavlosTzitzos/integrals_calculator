@@ -7,11 +7,11 @@ The steps of computing are the same as in MATLAB folder.
 
 (files: 
 
-&emsp; line_integrals_with_inteface_sf.py | for scalar functions
+&emsp; line_integrals_sf.py | for scalar functions
 
 &emsp; or 
 
-&emsp; line_integrals_with_inteface_vf.py | for vector functions 
+&emsp; line_integrals_vf.py | for vector functions 
 
 )
 
