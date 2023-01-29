@@ -109,15 +109,19 @@ Cylindical Coordinates:
 
 <ins>Step 1:</ins>
 
-&emsp; &emsp; Replace $x$ with $a \cdot r \cdot \cos(\theta)$ and $y$ with $b \cdot r \cdot \sin(\theta)$ :
+&emsp; &emsp; Replace :
 
-&emsp; &emsp; $x(r,\theta) = a \cdot r \cdot \cos(\theta)$ and $y(r,\theta) = b \cdot r \cdot \sin(\theta)$ .
+&emsp; &emsp; $x(\rho , \phi , \z) = rho \cdot \cos(\phi)$ , 
+
+&emsp; &emsp; $y(\rho , \phi , \z) = rho \cdot \sin(\phi)$ , 
+
+&emsp; &emsp; $z(\rho , \phi , \z) = z$ .
 
 <ins>Step 2:</ins>
 
 &emsp; &emsp; The new function is :
 
-&emsp; &emsp; $f(r,\theta) = f( x(r,\theta) , y(r,\theta) ) \cdot r \cdot a \cdot b$
+&emsp; &emsp; $f(\rho,\phi,z) = f( x(r,\theta) , y(r,\theta) ) \cdot r \cdot a \cdot b$
 
 <ins>Step 3:</ins>
 
