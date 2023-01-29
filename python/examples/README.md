@@ -3,9 +3,9 @@ Examples:
 
 This folder contains some examples that you can also try.
 
-* Figure 1 : Double Integral function $f ( x , y ) = x * y$ with $D =$ { $(x,y): 0 \leq x \leq 1 $ and $0 \leq y \leq 1$ }
+* Figure 1 : Double Integral function $f ( x , y ) = x * y$ with $D=$ { $(x,y): 0 \leq x \leq 1$ and $0 \leq y \leq 1$ }
 
-* Figure 2 :
+* Figure 2 : Double Integral function $f ( x , y ) = x * y$ with $D=$ { $(x,y): 0 \leq x \leq y$ and $0 \leq y \leq 1$ }
 
 * Figure 3 :
 
