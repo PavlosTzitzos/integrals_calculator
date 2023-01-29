@@ -14,7 +14,7 @@ Cartesian Coordinates:
 
 &emsp; &emsp; $x_1(y,z)$ and $x_2(y,z)$ are functions of $y$ and / or $z$ ( $x=f(y,z)$ ) , 
 
-&emsp; &emsp; $y_1(x,z)$ and $y_2(x,z)$ are functions of $x$ and / or $z$( $y=f(x,z)$ ) and
+&emsp; &emsp; $y_1(x,z)$ and $y_2(x,z)$ are functions of $x$ and / or $z$ ( $y=f(x,z)$ ) and
 
 &emsp; &emsp; $z_1(x,y)$ and $z_2(x,y)$ are functions of $x$ and / or $y$ ( $z=f(x,y)$ ) .
 
@@ -211,8 +211,9 @@ Ellipsoide Coordinates:
 
 Parabolic Coordinates:
 ----------------------
-
+Soon ...
 
 Conical Coordinates:
 --------------------
+Soon ...
 
