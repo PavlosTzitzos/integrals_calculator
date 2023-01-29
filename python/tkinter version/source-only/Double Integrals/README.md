@@ -3,8 +3,7 @@ Double Integrals in python:
 
 The steps of computing are the same as in MATLAB folder.
 
-
-**Version with terminal only**
+**Version with terminal only :**
 
 &emsp; Step 1: open the file
 
@@ -14,7 +13,10 @@ The steps of computing are the same as in MATLAB folder.
 
 &emsp; Step 4: examples
 
-**Version with tkinter**
+&emsp; &emsp; ** Note: see folder examples
+
+
+**Version with tkinter :**
 
 &emsp; Step 1: open the file
 
@@ -26,5 +28,4 @@ The steps of computing are the same as in MATLAB folder.
 
 &emsp; Step 4: examples
 
-
-
+&emsp; &emsp; ** Note: see folder examples
