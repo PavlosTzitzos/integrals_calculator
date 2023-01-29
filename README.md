@@ -20,6 +20,9 @@ Sources:
 > https://www.python.org/ : for main
 >
 > https://www.pysimplegui.org/en/latest/ : for advanced GUI 
+> 
+> https://www.pythonforbeginners.com/basics/ipython-a-short-introduction
+> 
 
 Folders:
 <details>
@@ -74,6 +77,8 @@ Other:
 
 
 TODO list:
+
+- [ ] use IPython to check the project
 
 - [ ] comments for code
 
