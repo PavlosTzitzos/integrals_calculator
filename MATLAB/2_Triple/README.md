@@ -209,10 +209,10 @@ Ellipsoide Coordinates:
 
 
 
-Paraboiled Coordinates:
+Parabolic Coordinates:
 ----------------------
 
 
-Conic Coordinates:
-------------------
+Conical Coordinates:
+--------------------
 
