@@ -75,16 +75,19 @@ Other:
 
 TODO list:
 
-[ ] comments for code
+- [ ] comments for code
 
-[ ] general integrals
+- [ ] general integrals
 
-[ ] c++ version of main functions
+- [ ] c++ version of main functions
 
-[ ] html based gui
+- [ ] html based gui
 
-[ ] more examples
+- [ ] more examples
 
-[ ] simple integrals step by step
+- [ ] simple integrals step by step
 
-[ ] other ...
+- [ ] add explaination on help button
+
+- [ ] other ideas , changes , issues or fixes ...
+
