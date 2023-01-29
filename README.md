@@ -23,6 +23,8 @@ Sources:
 > 
 > https://www.pythonforbeginners.com/basics/ipython-a-short-introduction
 > 
+> https://martinkondor.medium.com/how-to-write-quality-software-with-python-5b6023c0a7a0
+> 
 
 Folders:
 <details>
