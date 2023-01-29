@@ -11,7 +11,7 @@ In this folder you can find one file with:
 
 * surface integrals 
 
-All above features are based on the tkinter versions which you can find seperated in the tkinder folder.
+&emsp; ** Note: All above features are based on the tkinter versions which you can find seperated in the tkinder folder.
 
 * Language support : Greek and English
 
