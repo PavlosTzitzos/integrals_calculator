@@ -127,7 +127,7 @@ Cylindical Coordinates:
 
 &emsp; &emsp; Compute integral with respect to $\rho$ , then $\phi$ and then $z$ :
 
-&emsp; &emsp; $\int_{ z_1} ^ { z_2} ( \int _{ \phi _1} ^{ \phi _2} ( \int_{ \rho _1} ^{ \rho _2} f( \rho , \phi , \z ) d\rho ) d\phi ) dz$ .
+&emsp; &emsp; $\int_{ z_1} ^{ z_2} ( \int_{ \phi _1} ^ {\phi _2} ( \int _{ \rho _1} ^{ \rho _2} f(\rho,\phi,z) d\rho ) d\phi ) dz$ .
 
 **B.** For center of transformation $K(x_K,y_K)$ :
 
@@ -151,7 +151,7 @@ Cylindical Coordinates:
 
 &emsp; &emsp; Compute integral with respect to $\rho$ , then $\phi$ and then $z$ :
 
-&emsp; &emsp; $\int_{ z_1} ^ { z_2} ( \int _{ \phi _1} ^{ \phi _2} ( \int_{ \rho _1} ^{ \rho _2} f( \rho , \phi , \z ) d\rho ) d\phi ) dz$ .
+&emsp; &emsp; $\int_{ \phi_1} ^{ \phi_2} ( \int_{ \theta _1} ^ {\theta _2} ( \int _{r_1} ^{r_2} f(r,\theta,\phi) dr ) d\theta ) d\phi$ .
 
 
 Ellipsoide Coordinates:
