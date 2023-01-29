@@ -86,7 +86,7 @@ TODO list:
 
 - [ ] general integrals
 
-- [ ] c++ version of main functions
+/* - [ ] c++ version of main functions */
 
 - [ ] html based gui
 
