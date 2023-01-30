@@ -11,7 +11,8 @@ from sympy.parsing.sympy_parser import parse_expr
 
 def sym_compare(a,b):
     """
-        compare two symbols a b :
+        compare two sympy symbols a b :
+        return value : condition
         1 : a > b
         -1: a < b
         0 : a = b
@@ -26,6 +27,9 @@ def sym_compare(a,b):
     
 
 def inputs_request(obj_to_check, out_str):
+    """
+        a function that prints on terminal an str and can exit with "exit"
+    """
     obj_to_check = symbols('obj_to_check')
     T = obj_to_check.expr_free_symbols
     if T:
@@ -45,6 +49,11 @@ def inputs_request(obj_to_check, out_str):
     
 
 def inputs_call():
+    """
+        Prints in terminal a message and the user gives the str 
+        which will be coverted to sympy symbolic ojects
+        returns all inputs
+    """
     f = parse_expr(input("Give the function f(x,y): "))
     #f = inputs_request(f,"Give the function f(x,y)")
     x1 = parse_expr(input("Give x1: "))
@@ -60,6 +69,12 @@ def inputs_call():
 #end
 
 def swap_values(a,b):
+    """
+        Swaps 2 values of variables a and b:
+        a_new <-- b_old
+        b_new <-- a_old
+        returns new values of a and b
+    """
     temp = a
     a = b
     b = temp
@@ -67,29 +82,44 @@ def swap_values(a,b):
 #end
 
 def warning_one(a,b):
-    
+    """
+        A warning message appears when swap function is called
+        when a and b are : a > b
+        returns new values of a and b
+    """
     if sym_compare(a,b) ==1:
         print("\nWarning! \n\n Inverting Inputs ... \n\n")
         a,b = swap_values(a,b)
     #end
     return a,b
 
-
-#main
+"""
+    main function starts here:
+    first declare symbols that the script requires
+    then ask for input in terminal
+"""
 x, y, r, theta = symbols('x y r theta') #.....?????.....solve at home (1)
 x1, x2, y1, y2 = symbols('x1 x2 y1 y2')
 
 f,x1,x2,y1,y2,pc = inputs_call()
 
-#Input Arguments:
-# function f(x,y)
-# x1 <= x <= x2 , y1 <= y <= y2
+"""After input arguments:
+   > function f(x,y)
+   > edges ogf integration: x1 <= x <= x2 , y1 <= y <= y2
+   
+   Starting calculations:
+    main idea is to check for the cases that are explained in readme.md file
+    and then decide the series of integration
+   
+   Start with cartesian coordinates and then go to polar coordinates
+"""
 print("Calculating Double Integral ... \n")
 if (x1.is_number==1 and x2.is_number==1 and y1.is_number==1 and y2.is_number==1 and pc==0):
+    """
+        case 1 from readme.md file
+    """
     x1,x2 = warning_one(x1,x2)
     y1,y2 = warning_one(y1,y2)
-    #1.
-    #Simple x and y
     I1 = integrate(f,(x,x1,x2))
     I = integrate(I1,(y,y1,y2))
     print("D is Simple x and y.\n")
@@ -101,13 +131,11 @@ if (x1.is_number==1 and x2.is_number==1 and y1.is_number==1 and y2.is_number==1 
     pprint(Integral(I1,(y,y1,y2)))
     print("\nwhich gives: ")
     pprint(I)
-    #I = integral(integral(f,y1,y2),x1,x2)
-    #display result...
 elif((x1.is_number==0 or x2.is_number==0) and y1.is_number==1 and y2.is_number==1 and pc==0):
+    """
+        case 2 or 3 from readme.md file
+    """
     y1,y2 = warning_one(y1,y2)
-    #2.
-    #Simple x
-    #display result...
     I1 = integrate(f,(x,x1,x2))
     I = integrate(I1,(y,y1,y2))
     print("D is Simple x.\n")
@@ -120,10 +148,10 @@ elif((x1.is_number==0 or x2.is_number==0) and y1.is_number==1 and y2.is_number==
     print("\nwhich gives: ")
     pprint(I)
 elif(pc==0):
+    """
+        case 4 or 5 from readme.md file
+    """
     x1,x2 = warning_one(x1,x2)
-    #3.
-    #Simple y
-    #display result...
     I1 = integrate(f,(y,y1,y2))
     I = integrate(I1,(x,x1,x2))
     print("D is Simple y.\n")
@@ -136,6 +164,9 @@ elif(pc==0):
     print("\nwhich gives: ")
     pprint(I)
 elif(pc==1):
+    """
+        polar coordinates:
+    """
     r1 = parse_expr(input("Give r1: "))
     r2 = parse_expr(input("Give r2: "))
     theta1 = parse_expr(input("Give theta1: "))
