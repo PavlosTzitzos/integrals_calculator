@@ -1,10 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Dec 26 19:13:56 2021
-
-@author: user
-"""
-
+# import libraries : 
 from sympy import *
 from sympy import symbols
 from sympy import integrate
@@ -14,19 +8,14 @@ from sympy import cos
 from sympy import sin
 from sympy import latex
 from sympy.parsing.sympy_parser import parse_expr
-"""
-function [I] = DoubleIntegrals(f,x1,x2,y1,y2,pc)
-# 
-# f = f(x,y)
-# x1 <= x <= x2
-# y1 <= y <= y2
-# pc = 1, for polar coordinates
-# pc = 0, for cartesian -//-
-# 
-# I = Integral result
-# 
-"""
+
 def sym_compare(a,b):
+    """
+        compare two symbols a b :
+        1 : a > b
+        -1: a < b
+        0 : a = b
+    """
     d = a-b
     if d.is_positive:
         return 1
