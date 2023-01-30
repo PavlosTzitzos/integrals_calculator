@@ -25,6 +25,8 @@ Sources:
 > 
 > https://martinkondor.medium.com/how-to-write-quality-software-with-python-5b6023c0a7a0
 > 
+> https://medium.com/@mathcube7/symbolic-integration-by-parts-and-substitution-with-python-1d9bab827fd0
+> 
 
 Folders:
 <details>
