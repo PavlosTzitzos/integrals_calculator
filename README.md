@@ -82,6 +82,8 @@ Other:
 
 TODO list:
 
+- [ ] fix the site
+
 - [ ] use IPython to check the project
 
 - [ ] comments for code
