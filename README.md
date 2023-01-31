@@ -5,7 +5,6 @@
    </head> 
   
    <body> 
-      <header>Integrals Calculator</header> 
       <article> 
          <section> 
             A calculator for difinite and indifinite integrals.
