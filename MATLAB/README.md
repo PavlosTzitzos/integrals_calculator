@@ -1,6 +1,9 @@
 
 Integrals Version in MATLAB:
 ----------------------------
+This is the first version of the intagrals calculator.
+
+Every integral is in different folder.
 
 
 Folder:
