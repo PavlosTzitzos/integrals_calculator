@@ -3,7 +3,6 @@
    <head> 
       <meta charset = "utf-8"> 
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Integrals Calculator</title> 
    </head> 
   
    <body> 
@@ -93,12 +92,12 @@
                <li>An idea for integation for one variable <a href="https://medium.com/@mathcube7/symbolic-integration-by-parts-and-substitution-with-python-1d9bab827fd0">link</a></li>
             </ul>
          </section>
+         <section>
+            CiMi site: <a href="https:cimi.gr/">link</a>
+         </section>
+         <section>
+            Created by: Pavlos Tzitzos and Vasilis Navrozidis
+         </section>
       </article> 
-      
-      <aside>
-         CiMi site: <a href="https:cimi.gr/">link</a>
-      </aside> 
-      
-      <footer>2023 : Pavlos Tzitzos , Vasilis Navrozidis</footer> 
    </body> 
 </html> 
