@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html>  
    <head> 
       <meta charset = "utf-8"> 
@@ -8,17 +8,6 @@
   
    <body> 
       <header>Integrals Calculator</header> 
-      <nav>
-        <ul> 
-            <li><a href = "index.html">Home</a></li> 
-            <li><a href = "https://github.com/PavlosTzitzos/integrals_calculator" target="_blank">GitHub Repository</a></li>
-            <li><a href = "sources.html">Sources</a></li> 
-            <li><a href = "code.html">Code explaination</a></li> 
-            <li><a href = "how_to_run.html">How to Run</a></li> 
-            <li><a href = "about.html"></a>About</li> 
-         </ul>
-      </nav>
-      
       <article> 
          <section> 
             A calculator for difinite and indifinite integrals.
@@ -92,9 +81,23 @@
                 </ul>
             </ul>
          </section>
+         <section>
+            Sources:
+            <ul>
+               <li>Mathematics <a href="https://tutorial.math.lamar.edu/">Tutorial</a></li>
+               <li>Symbolic Computations library <a href="https://www.sympy.org/en/index.html">sympy</a></li>
+               <li>Python Official <a href="https://www.python.org/">site</a></li>
+               <li>PySimpleGUI Official <a href="https://www.pysimplegui.org/en/latest/">site</a></li>
+               <li>An Introduction to python <a href="https://www.pythonforbeginners.com/basics/ipython-a-short-introduction">link</a></li>
+               <li>A tutorial for corrections <a href="https://martinkondor.medium.com/how-to-write-quality-software-with-python-5b6023c0a7a0">link</a></li>
+               <li>An idea for integation for one variable <a href="https://medium.com/@mathcube7/symbolic-integration-by-parts-and-substitution-with-python-1d9bab827fd0">link</a></li>
+            </ul>
+         </section>
       </article> 
       
-      <aside>...</aside> 
+      <aside>
+         CiMi site: <a href="https:cimi.gr/">link</a>
+      </aside> 
       
       <footer>2023 : Pavlos Tzitzos , Vasilis Navrozidis</footer> 
    </body> 
