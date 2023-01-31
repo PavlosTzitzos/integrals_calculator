@@ -1,3 +1,7 @@
+layout: page
+title: "integrals-calculator.md"
+permalink: /
+
 <html>  
    <head> 
       <meta charset = "utf-8"> 
