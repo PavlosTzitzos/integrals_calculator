@@ -1,102 +1,102 @@
-# integrals_calculator
-A calculator for difinite and indifinite integrals.
+<!DOCTYPE html> 
 
-It is written only in python. 
-
-Packages used PySimpleGUI and sympy.
-
-Features:
-* Support for two languages: Engish and Greek.
-* Difinite and Indifinite Integrals
-* Simple , Double and Triple Integrals
-* Line and Surface Integrals
-* There is an effort to calculate general integrals. 
-
-Sources:
-> https://tutorial.math.lamar.edu/ : tutorial
-> 
-> https://www.sympy.org/en/index.html : for symbolic computations
->
-> https://www.python.org/ : for main
->
-> https://www.pysimplegui.org/en/latest/ : for advanced GUI 
-> 
-> https://www.pythonforbeginners.com/basics/ipython-a-short-introduction
-> 
-> https://martinkondor.medium.com/how-to-write-quality-software-with-python-5b6023c0a7a0
-> 
-> https://medium.com/@mathcube7/symbolic-integration-by-parts-and-substitution-with-python-1d9bab827fd0
-> 
-
-Folders:
-<details>
-<summary>Version written in MATLAB</summary>
-  <ul>
-    <li>Double Integrals</li>
-    <li>Triple Integrals</li>
-    <li>Line Integrals</li>
-      <ul>
-        <li>Function</li>
-        <li>Vector Function</li>
-      </ul>
-    <li>Surface Integrals</li>
-    <li>General Integrals</li>
-  </ul>
-</details>
-
-<details>
-<summary>Version written in Python</summary>
-  <ul>
-    <li>Version with terminal</li>
-    <ul>
-      <li>Double Integrals</li>
-      <li>Triple Integrals</li>
-      <li>Line Integrals</li>
-        <ul>
-          <li>Function</li>
-          <li>Vector Function</li>
-        </ul>
-      <li>Surface Integrals</li>
-      <li>General Integrals</li>
-    </ul>
-    <li>Version with tkinter</li>
-    <ul>
-      <li>Double Integrals</li>
-      <li>Triple Integrals</li>
-      <li>Line Integrals</li>
-        <ul>
-          <li>Function</li>
-          <li>Vector Function</li>
-        </ul>
-      <li>Surface Integrals</li>
-      <li>General Integrals</li>
-    </ul>
-    <li>Version with PySimpleGUI</li>
-  </ul>
-</details>
-
-
-Other:
-> https://cimi.gr/
-
-
-TODO list:
-
-- [ ] fix the site
-
-- [ ] use IPython to check the project
-
-- [ ] comments for code
-
-- [ ] general integrals
-
-- [ ] html based gui
-
-- [ ] more examples
-
-- [ ] simple integrals step by step
-
-- [ ] add explaination on help button
-
-- [ ] other ideas , changes , issues or fixes ...
-
+<html>  
+   <head> 
+      <meta charset = "utf-8"> 
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Integrals Calculator</title> 
+   </head> 
+  
+   <body> 
+      <header>Integrals Calculator</header> 
+      <nav>
+        <ul> 
+            <li><a href = "index.html">Home</a></li> 
+            <li><a href = "https://github.com/PavlosTzitzos/integrals_calculator" target="_blank">GitHub Repository</a></li>
+            <li><a href = "sources.html">Sources</a></li> 
+            <li><a href = "code.html">Code explaination</a></li> 
+            <li><a href = "how_to_run.html">How to Run</a></li> 
+            <li><a href = "about.html"></a>About</li> 
+         </ul>
+      </nav>
+      
+      <article> 
+         <section> 
+            A calculator for difinite and indifinite integrals.
+            It is written only in python.
+            Packages used PySimpleGUI and sympy.
+            Features:
+            <ul>
+                <li>Support for two languages: Engish and Greek.</li>
+                <li>Difinite and Indifinite Integrals</li>
+                <li>Simple , Double and Triple Integrals</li>
+                <li>Line and Surface Integrals</li>
+                <li>There is an effort to calculate general integrals.</li>
+            </ul>
+         </section>
+         <section>
+            TODO list:
+            <ul>
+                <li>fix the site</li>
+                <li>use IPython to check the project</li>
+                <li>comments for code</li>
+                <li>general integrals</li>
+                <li>html based gui</li>
+                <li>more examples</li>
+                <li>simple integrals step by step</li>
+                <li>add explaination on help button</li>
+                <li>other ideas , changes , issues or fixes ...</li>
+            </ul>
+         </section>
+         <section>
+            In this repository you can find:
+            <ul>
+                <li>Version written in MATLAB</li>
+                <ul>
+                    <li>Double Integrals</li>
+                    <li>Triple Integrals</li>
+                    <li>Line Integrals</li>
+                    <ul>
+                        <li>Scalar Function</li>
+                        <li>Vector Function</li>
+                    </ul>
+                    <li>Surface Integrals</li>
+                    <li>General Integrals</li>
+                </ul>
+                <li>Version written in Python</li>
+                <ul>
+                    <li>Version with terminal</li>
+                    <ul>
+                    <li>Double Integrals</li>
+                    <li>Triple Integrals</li>
+                    <li>Line Integrals</li>
+                        <ul>
+                        <li>Function</li>
+                        <li>Vector Function</li>
+                        </ul>
+                    <li>Surface Integrals</li>
+                    <li>General Integrals</li>
+                    </ul>
+                    <li>Version with tkinter</li>
+                    <ul>
+                    <li>Double Integrals</li>
+                    <li>Triple Integrals</li>
+                    <li>Line Integrals</li>
+                        <ul>
+                        <li>Function</li>
+                        <li>Vector Function</li>
+                        </ul>
+                    <li>Surface Integrals</li>
+                    <li>General Integrals</li>
+                    </ul>
+                    <li>Version with PySimpleGUI</li>
+                </ul>
+            </ul>
+         </section>
+      </article> 
+      
+      <aside>...</aside> 
+      
+      <footer>2023 : Pavlos Tzitzos , Vasilis Navrozidis</footer> 
+   </body> 
+</html> 
