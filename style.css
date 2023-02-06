@@ -5,9 +5,10 @@ body {
 section {
   color: white;
   text-align: center;
+  font-family: Serif;
 }
 
 li {
-  font-family: verdana;
+  font-family: Serif;
   font-size: 20px;
 }
