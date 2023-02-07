@@ -61,11 +61,11 @@
     }
     
     a {
-        color: rgb(38, 0, 255);
+        color:  #0067bb;
     }
     
     a:hover {
-        color: white;
+        color: rgb(38, 0, 255);
     }
     
     .code {
