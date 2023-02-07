@@ -54,7 +54,7 @@
     }
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
     body {
         color: #A7A7A7;
         background-color: #0D1117;
