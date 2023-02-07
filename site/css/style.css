@@ -1,0 +1,220 @@
+body {
+  font-family: "Overpass Mono";
+  font-size: 14pt;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+.regular-table table, .regular-table tbody tr th, .regular-table tr td {
+  border: 1px solid gray;
+  border-collapse: collapse;
+  padding: 10px;
+}
+
+.main {
+  width: 44%;
+  margin-top: 10vh;
+margin-left: 36%;
+}
+
+.nav-left {
+width: 16%;
+position: fixed;
+top: 0;
+margin-left: 20%;
+height: 60vh;
+margin-top: 5vh;
+}
+
+.nav-left ul {
+list-style: none;
+padding: 0;
+}
+
+.nav-left li {
+margin-bottom: 1vh;
+margin-top: 1.4vh;
+  padding-left: 1vh;
+margin-left: 0vh;
+}
+
+.nav-left ul li a {
+  margin-left: 1.5vh;
+}
+
+.nav-top {
+display: flex;
+margin-left: 5vh;
+}
+
+.slogan {
+
+}
+
+/* With class Phone it will only be so on mobile devices */
+.phone {
+  display: none;
+}
+
+/* With class PC it will be only applied to PC */
+.pc {
+  
+}
+
+pre {
+  font-size: 12pt;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.cw {
+  font-size: 12pt;
+  padding: 2px;
+  padding-right: 3px;
+  padding-left: 3px;
+  border-radius: 1px;
+}
+
+.attention {
+  padding: 10px;
+  border-radius: 8px;
+}
+
+
+summary {
+  outline: none;
+}
+
+@media (max-width: 1099px)
+{
+  .main {
+      width: 70%;
+      margin-left: 15%;
+  }
+  
+  iframe {
+      display: none;
+  }
+  
+  .badges {
+      display: none;
+  }
+  
+  .phone {
+      display: block;
+  }
+  
+  .pc {
+      display: none;
+  }
+  
+  .head-of-page {
+      font-size: 25pt;
+  }
+  
+  .link-block-mob {
+      display: block;
+  }
+  
+  .link-block-mob a {
+      display: block;
+      border-bottom: solid 1px gray;
+      font-size: 30pt;
+      padding: 15px;
+  }
+  
+  .logo {
+      width: 250px;
+  }
+}
+
+@media (min-width: 1100px)
+{
+@media (max-width: 1600px)
+{
+.nav-left {
+  width: 26%;
+  margin-left: 10%;
+}
+
+.main {
+  margin-left: 35%;
+  width: 56%;
+}
+}
+}
+
+a {
+  text-decoration: none;
+}
+
+.active-link {
+  list-style: none;
+}
+
+.centered {
+  text-align: center;
+}
+
+
+
+.block {
+  margin-top: 6vh;
+}
+
+.code {
+  padding: 15px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+
+
+
+
+
+/* Yadg docs style*/
+
+.yadg-list {
+  margin-top: 3vh;
+  border-top: 1px solid black;
+  padding: 1.2vh;
+}
+
+.yadg-list-2 {
+  margin-top: 3vh;
+  border-top: 1px solid black;
+  padding: 1.2vh;
+}
+
+.yadg-ul {
+  padding: 0;
+  list-style: none;
+}
+
+
+.wiki-ul-main {
+  list-style-type: upper-roman;
+  margin-left: 10vh;
+}
+
+.wiki-ul-main li {
+  margin-top: 1vh;
+}
+
+.wiki-main-image-container {
+  margin-right: 10vh;
+  text-align: right;
+}
+
+.wiki-main-image {
+  width: 40vh;
+}
+
+.wiki-main-page-container {
+  
+}
+
+.whatsnew-page li {
+  margin-top: 1vh;
+}
