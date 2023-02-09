@@ -135,11 +135,15 @@
 <h2 class="centered"><a name="about" href="" class="anchor">Try online</a></h2>
 <hr/>
 <p>
-    This page is under constraction.
+    !!! WARNING !!! This page is under constraction !!!
     <div class="tab">
         <button class="tablinks1" onclick="integralType(event, 'DoubleIntegral')" id="defaultOpen">Double Integral</button>
         <button class="tablinks1" onclick="integralType(event, 'TripleIntegral')">Triple Integral</button>
-        <button class="tablinks1" onclick="integralType(event, 'LineIntegral')">Line Integral</button>
+        <button class="tablinks1" onclick="integralType(event, 'LineIntegralSF')">Line Integral of SF</button>
+        <button class="tablinks1" onclick="integralType(event, 'LineIntegralVF')">Line Integral of VF</button>
+        <button class="tablinks1" onclick="integralType(event, 'SurfaceIntegralSF')">Surface Integral of SF</button>
+        <!--<button class="tablinks1" onclick="integralType(event, 'SurfaceIntegralVF')"><s>Surface Integral of VF</s></button>
+        <button class="tablinks1" onclick="integralType(event, 'GeneralIntegral')"><s>General Integral</s></button>-->
     </div>
     
     <!-- Tab content -->
@@ -152,9 +156,9 @@
             <br /><br />
             <br />Choose type of coordinates:<br />
             <div class="tab">
-                <button class="tablinks2" onclick="coordinatesType(event, 'Cartesian')" id="defaultOpen">Cartesian</button>
-                <button class="tablinks2" onclick="coordinatesType(event, 'Polar')">Polar</button>
-                <button class="tablinks2" onclick="coordinatesType(event, 'Elliptical')">Elliptical</button>
+                <button class="tablinks2" onclick="doubleCoordinates(event, 'Cartesian')" id="defaultOpen">Cartesian</button>
+                <button class="tablinks2" onclick="doubleCoordinates(event, 'Polar')">Polar</button>
+                <button class="tablinks2" onclick="doubleCoordinates(event, 'Elliptical')">Elliptical</button>
             </div>
             <div id="Cartesian" class="tabcontent2">
                 <h4>Cartesian Coordinates</h4>
@@ -237,44 +241,94 @@
             <input type="text" name="f" value="">
             <br /><br />
             <br />Choose type of coordinates:<br />
-            <button class="choose" type="button">Cartesian</button>
-            <button class="choose" type="button">Sperical</button>
-            <button class="choose" type="button">Ellipsoidal</button>
-            <br /><br />
-            <br />Insert Edges:<br />
-            <label>$x_1=$</label>
-            <input type="text" name="x1" value="">
-            <label>$x_2=$</label>
-            <input type="text" name="x2" value="">
-            <br /><br />
-            <label>$y_1=$</label>
-            <input type="text" name="y1" value="">
-            <label>$y_2=$</label>
-            <input type="text" name="y2" value="">
-            <br /><br />
-            <br />Insert Edges:<br />
-            <label>$r_1=$</label>
-            <input type="text" name="x1" value="">
-            <label>$r_2=$</label>
-            <input type="text" name="x2" value="">
-            <br /><br />
-            <label>$\theta_1=$</label>
-            <input type="text" name="y1" value="">
-            <label>$\theta_2=$</label>
-            <input type="text" name="y2" value="">
-            <br /><br />
-            <br />Center of coordinate system ( default is K(0,0)) :<br />
+            <div class="tab">
+                <button class="tablinks2" onclick="tripleCoordinates(event, 'TripleCartesian')" id="defaultOpen">Cartesian</button>
+                <button class="tablinks2" onclick="tripleCoordinates(event, 'Spherical')">Spherical</button>
+                <button class="tablinks2" onclick="tripleCoordinates(event, 'Ellipsoid')">Ellipsoid</button>
+            </div>
+            <div id="TripleCartesian" class="tabcontent2">
+                <h4>Cartesian Coordinates</h4>
+                <p>
+                    <br />Insert Edges:<br />
+                    <label>$x_1=$</label>
+                    <input type="text" name="x1" value="">
+                    <label>$x_2=$</label>
+                    <input type="text" name="x2" value="">
+                    <br /><br />
+                    <label>$y_1=$</label>
+                    <input type="text" name="y1" value="">
+                    <label>$y_2=$</label>
+                    <input type="text" name="y2" value="">
+                    <br /><br />
+                    <label>$z_1=$</label>
+                    <input type="text" name="z1" value="">
+                    <label>$z_2=$</label>
+                    <input type="text" name="z2" value="">
+                    <br /><br />
+                </p>
+                <span onclick="this.parentElement.style.display='none'">^</span>
+            </div>
+
+            <div id="Spherical" class="tabcontent2">
+                <h4>Spherical Coordinates</h4>
+                <p>
+                    <br />Insert Edges:<br />
+                    <label>$r_1=$</label>
+                    <input type="text" name="r1" value="">
+                    <label>$r_2=$</label>
+                    <input type="text" name="r2" value="">
+                    <br /><br />
+                    <label>$\theta_1=$</label>
+                    <input type="text" name="theta1" value="">
+                    <label>$\theta_2=$</label>
+                    <input type="text" name="theta2" value="">
+                    <br /><br />
+                    <label>$\phi_1=$</label>
+                    <input type="text" name="phi1" value="">
+                    <label>$\phi_2=$</label>
+                    <input type="text" name="phi2" value="">
+                    <br /><br />
+                </p>
+                <span onclick="this.parentElement.style.display='none'">^</span>
+            </div>
+
+            <div id="Ellipsoid" class="tabcontent2">
+                <h4>Ellipsoid Coordinates</h4>
+                <p>
+                    <br />Insert Edges:<br />
+                    <label>$r_1=$</label>
+                    <input type="text" name="r1" value="">
+                    <label>$r_2=$</label>
+                    <input type="text" name="r2" value="">
+                    <br /><br />
+                    <label>$\theta_1=$</label>
+                    <input type="text" name="theta1" value="">
+                    <label>$\theta_2=$</label>
+                    <input type="text" name="theta2" value="">
+                    <br /><br />
+                    <label>$\phi_1=$</label>
+                    <input type="text" name="phi1" value="">
+                    <label>$\phi_2=$</label>
+                    <input type="text" name="phi2" value="">
+                    <br /><br />
+                    <br />Length of axes for elliptical coordinates (default (a=1,b=1,c=1)):<br />
+                    <label>$a=$</label>
+                    <input type="text" name="c" value="1">
+                    <label>$b=$</label>
+                    <input type="text" name="b" value="1">
+                    <label>$c=$</label>
+                    <input type="text" name="c" value="1">
+                </p>
+                <span onclick="this.parentElement.style.display='none'">^</span>
+            </div>
+
+            <br />Center of coordinate system ( default is K(0,0,0)) :<br />
             <label>$K_x=$</label>
-            <input type="text" name="x1" value="">
+            <input type="text" name="Kx" value="0">
             <label>$K_y=$</label>
-            <input type="text" name="x2" value="">
-            <br /><br />
-            <br />Length of axes for elliptical coordinates (default (a=1,b=1)):<br />
-            <label>$a=$</label>
-            <input type="text" name="y1" value="">
-            <label>$b=$</label>
-            <input type="text" name="y2" value="">
-            <br /><br />
+            <input type="text" name="Ky" value="0">
+            <label>$K_z=$</label>
+            <input type="text" name="Kz" value="0">
             <br /><br />
             <button class="compute" type="button">Compute</button>
             <button class="reset" type="button" >Reset</button>
@@ -284,13 +338,195 @@
         <span onclick="this.parentElement.style.display='none'">^</span>
     </div>
       
-    <div id="LineIntegral" class="tabcontent1">
-        <h3>Line Integral</h3>
+    <div id="LineIntegralSF" class="tabcontent1">
+        <h3>Line Integral of Scalar Function</h3>
         <p>
-            .
+            <br />Give the function $f(x,y,z)$ for integration:<br />
+            <label>$f(x,y,z)=$</label>
+            <input type="text" name="f" value="">
+            <br /><br />
+            <br />Give the curve $\vec{c}(t) = [x(t) , y(t) , z(t)]$ for integration:<br />
+            <label>$x(t)=$</label>
+            <input type="text" name="cx" value="">
+            <label>$y(t)=$</label>
+            <input type="text" name="cy" value="">
+            <label>$z(t)=$</label>
+            <input type="text" name="cz" value="">
+            <br /><br />
+            <br />Give the edges $t_1$ and $t_2$ :<br />
+            <label>$t_1=$</label>
+            <input type="text" name="t1" value="">
+            <label>$t_2=$</label>
+            <input type="text" name="t2" value="">
+            <br /><br />
+            <br /><br />
+            <button class="compute" type="button">Compute</button>
+            <button class="reset" type="button" >Reset</button>
+            <button class="exit" type="button">Exit</button>
+            <br /><br />
         </p>
         <span onclick="this.parentElement.style.display='none'">^</span>
     </div>
+
+    <div id="LineIntegralVF" class="tabcontent1">
+        <h3>Line Integral of Vector Function</h3>
+        <p>
+            <br />Give the function $\vec{F}(x,y,z)=[F_1 , F_2 , F_3]$ for integration:<br />
+            <br /><label>$F_1(x,y,z)=$</label>
+            <input type="text" name="fx" value=""><br />
+            <br /><label>$F_2(x,y,z)=$</label>
+            <input type="text" name="fy" value=""><br />
+            <br /><label>$F_3(x,y,z)=$</label>
+            <input type="text" name="fz" value=""><br />
+            <br /><br />
+            <br />Choose type of curve:<br />
+            <div class="tab">
+                <button class="tablinks2" onclick="lineVFcurve(event, 'curve')" id="defaultOpen">General Curve</button>
+                <button class="tablinks2" onclick="lineVFcurve(event, 'line')">Line</button>
+                <button class="tablinks2" onclick="lineVFcurve(event, 'circle')">Circle</button>
+                <button class="tablinks2" onclick="lineVFcurve(event, 'ellipse')">Ellipse</button>
+            </div>
+            <div id="curve" class="tabcontent2">
+                <h4>General Curve</h4>
+                <p>
+                    <br />Give the curve $\vec{c}(t) = [x(t) , y(t) , z(t)]$ for integration:<br />
+                    <label>$x(t)=$</label>
+                    <input type="text" name="cx" value="">
+                    <label>$y(t)=$</label>
+                    <input type="text" name="cy" value="">
+                    <label>$z(t)=$</label>
+                    <input type="text" name="cz" value="">
+                    <br /><br />
+                    <br />Give the edges $t_1$ and $t_2$ :<br />
+                    <label>$t_1=$</label>
+                    <input type="text" name="t1" value="">
+                    <label>$t_2=$</label>
+                    <input type="text" name="t2" value="">
+                    <br /><br />
+                </p>
+                <span onclick="this.parentElement.style.display='none'">^</span>
+            </div>
+            <div id="line" class="tabcontent2">
+                <h4>Line to Curve</h4>
+                <p>
+                    <br />Give a point $A(x_A,y_A,z_A)$ of the line:<br />
+                    <label>$x_A=$</label>
+                    <input type="text" name="xA" value="">
+                    <label>$y_A=$</label>
+                    <input type="text" name="yA" value="">
+                    <label>$z_A=$</label>
+                    <input type="text" name="zA" value="">
+                    <br /><br />
+                    <br />Give a point $B(x_B,y_B,z_B)$ of the line:<br />
+                    <label>$x_B=$</label>
+                    <input type="text" name="xB" value="">
+                    <label>$y_B=$</label>
+                    <input type="text" name="yB" value="">
+                    <label>$z_B=$</label>
+                    <input type="text" name="zB" value="">
+                    <br /><br />
+                </p>
+                <span onclick="this.parentElement.style.display='none'">^</span>
+            </div>
+            <div id="circle" class="tabcontent2">
+                <h4>Circle to Curve</h4>
+                <p>
+                    <br />Give the center $K(x_K,y_K,z_K)$ of the circle:<br />
+                    <label>$x_K=$</label>
+                    <input type="text" name="Kx" value="">
+                    <label>$y_K=$</label>
+                    <input type="text" name="Ky" value="">
+                    <label>$z_K=$</label>
+                    <input type="text" name="Kz" value="">
+                    <br /><br />
+                    <br />Give the radius $r$ of the circle :<br />
+                    <label>$r=$</label>
+                    <input type="text" name="r" value="">
+                    <br /><br />
+                    <br />Give the angle in radians of the circle :<br />
+                    <label>$a=$</label>
+                    <input type="text" name="t1" value="">
+                    <label>$b=$</label>
+                    <input type="text" name="t2" value="">
+                    <br /><br />
+                </p>
+                <span onclick="this.parentElement.style.display='none'">^</span>
+            </div>
+            <div id="ellipse" class="tabcontent2">
+                <h4>Ellipse to Curve</h4>
+                <p>
+                    <br />Give the center $K(x_K,y_K,z_K)$ of the ellipse:<br />
+                    <label>$x_K=$</label>
+                    <input type="text" name="Kx" value="">
+                    <label>$y_K=$</label>
+                    <input type="text" name="Ky" value="">
+                    <label>$z_K=$</label>
+                    <input type="text" name="Kz" value="">
+                    <br /><br />
+                    <br />Give the axis multipliers :<br />
+                    <label>$a=$</label>
+                    <input type="text" name="a" value="">
+                    <label>$b=$</label>
+                    <input type="text" name="b" value="">
+                    <label>$c=$</label>
+                    <input type="text" name="c" value="">
+                    <br /><br />
+                    <br />Give the angle in radians of the circle :<br />
+                    <label>$a=$</label>
+                    <input type="text" name="t1" value="">
+                    <label>$b=$</label>
+                    <input type="text" name="t2" value="">
+                    <br /><br />
+                </p>
+                <span onclick="this.parentElement.style.display='none'">^</span>
+            </div>
+            <br /><br />
+            <br /><br />
+            <button class="compute" type="button">Compute</button>
+            <button class="reset" type="button" >Reset</button>
+            <button class="exit" type="button">Exit</button>
+            <br /><br />
+        </p>
+        <span onclick="this.parentElement.style.display='none'">^</span>
+    </div>
+
+    <div id="SurfaceIntegralSF" class="tabcontent1">
+        <h3>Surface Integral</h3>
+        <p>
+            <br />Give the function $f(x,y,z)$ for integration:<br />
+            <label>$f(x,y,z)=$</label>
+            <input type="text" name="f" value="">
+            <br /><br />
+            <br />Give the surface $s(u,v)=[x(u,v) , y(u,v) , z(u,v)]$ for integration:<br />
+            <br /><label>$x(u,v)=$</label>
+            <input type="text" name="sx" value=""><br />
+            <br /><label>$y(u,v)=$</label>
+            <input type="text" name="sy" value=""><br />
+            <br /><label>$z(u,v)=$</label>
+            <input type="text" name="sz" value=""><br />
+            <br /><br />
+            <br />Give the edges :<br />
+            <br />
+            <label>$u_1=$</label>
+            <input type="text" name="u1" value="">
+            <label>$u_2=$</label>
+            <input type="text" name="u2" value="">
+            <br /><br />
+            <label>$v_1=$</label>
+            <input type="text" name="v1" value="">
+            <label>$v_2=$</label>
+            <input type="text" name="v2" value="">
+            <br />
+            <br /><br />
+            <button class="compute" type="button">Compute</button>
+            <button class="reset" type="button" >Reset</button>
+            <button class="exit" type="button">Exit</button>
+            <br /><br />
+        </p>
+        <!-- Click on the <span> element to close the tab -->
+        <span onclick="this.parentElement.style.display='none'">^</span>
+    </div>
+
     <script>
         // Get the element with id="defaultOpen" and click on it
         document.getElementById("defaultOpen").click();
