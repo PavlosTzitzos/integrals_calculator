@@ -7,18 +7,25 @@
     <link rel="stylesheet" href="css/theme.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Overpass+Mono">
     
+    <!-- Include MathJax -->
+    <title>Math jax</title>
+
+    <!-- javascript for tabs -->
+
     <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-   ym(72666283, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true
-   });
-</script>   
-<noscript><div><img src="https://mc.yandex.ru/watch/72666283" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+        ym(72666283, "init", {
+                clickmap:true,
+                trackLinks:true,
+                accurateTrackBounce:true
+            }
+        );
+    </script>   
+
+    <noscript><div><img src="https://mc.yandex.ru/watch/72666283" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
     
     
@@ -34,8 +41,28 @@
     <!-- /Google Analytics -->
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
+<!-- Linking to CDN -->
+<script id="MathJax-script" async src=
+"https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+  
+    <!-- Configuration of math jax -->
+    <script>
+        MathJax = {
+            autoload: {
+                color: [],
+                colorV2: ['color']
+            },
+            tex: {
+                inlineMath: [['$', '$'], 
+                        ['\\(', '\\)']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
 <script src="https://buttons.github.io/buttons.js"></script>
 
 <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
@@ -108,8 +135,168 @@
 <h2 class="centered"><a name="about" href="" class="anchor">Try online</a></h2>
 <hr/>
 <p>
-    Coming soon . . .
+    This page is under constraction.
+    <div class="tab">
+        <button class="tablinks1" onclick="integralType(event, 'DoubleIntegral')" id="defaultOpen">Double Integral</button>
+        <button class="tablinks1" onclick="integralType(event, 'TripleIntegral')">Triple Integral</button>
+        <button class="tablinks1" onclick="integralType(event, 'LineIntegral')">Line Integral</button>
+    </div>
+    
+    <!-- Tab content -->
+    <div id="DoubleIntegral" class="tabcontent1">
+        <h3>Double Integral</h3>
+        <p>
+            <br />Give the function $f(x,y)$ for integration:<br />
+            <label>$f(x,y)=$</label>
+            <input type="text" name="f" value="">
+            <br /><br />
+            <br />Choose type of coordinates:<br />
+            <div class="tab">
+                <button class="tablinks2" onclick="coordinatesType(event, 'Cartesian')" id="defaultOpen">Cartesian</button>
+                <button class="tablinks2" onclick="coordinatesType(event, 'Polar')">Polar</button>
+                <button class="tablinks2" onclick="coordinatesType(event, 'Elliptical')">Elliptical</button>
+            </div>
+            <div id="Cartesian" class="tabcontent2">
+                <h4>Cartesian Coordinates</h4>
+                <p>
+                    <br />Insert Edges:<br />
+                    <label>$x_1=$</label>
+                    <input type="text" name="x1" value="">
+                    <label>$x_2=$</label>
+                    <input type="text" name="x2" value="">
+                    <br /><br />
+                    <label>$y_1=$</label>
+                    <input type="text" name="y1" value="">
+                    <label>$y_2=$</label>
+                    <input type="text" name="y2" value="">
+                    <br /><br />
+                </p>
+                <span onclick="this.parentElement.style.display='none'">^</span>
+            </div>
+            <div id="Polar" class="tabcontent2">
+                <h4>Polar Coordinates</h4>
+                <p>
+                    <br />Insert Edges:<br />
+                    <label>$r_1=$</label>
+                    <input type="text" name="r1" value="">
+                    <label>$r_2=$</label>
+                    <input type="text" name="r2" value="">
+                    <br /><br />
+                    <label>$\theta_1=$</label>
+                    <input type="text" name="theta1" value="">
+                    <label>$\theta_2=$</label>
+                    <input type="text" name="theta2" value="">
+                    <br /><br />
+                </p>
+                <span onclick="this.parentElement.style.display='none'">^</span>
+            </div>
+            <div id="Elliptical" class="tabcontent2">
+                <h4>Elliptical Coordinates</h4>
+                <p>
+                    <br />Insert Edges:<br />
+                    <label>$r_1=$</label>
+                    <input type="text" name="r1" value="">
+                    <label>$r_2=$</label>
+                    <input type="text" name="r2" value="">
+                    <br /><br />
+                    <label>$\theta_1=$</label>
+                    <input type="text" name="theta1" value="">
+                    <label>$\theta_2=$</label>
+                    <input type="text" name="theta2" value="">
+                    <br /><br />
+                    <br />Length of axes for elliptical coordinates (default (a=1,b=1)):<br />
+                    <label>$a=$</label>
+                    <input type="text" name="a" value="1">
+                    <label>$b=$</label>
+                    <input type="text" name="b" value="1">
+                </p>
+                <span onclick="this.parentElement.style.display='none'">^</span>
+            </div>
+            <br /><br />
+            <br />Center of coordinate system ( default is K(0,0)) :<br />
+            <label>$K_x=$</label>
+            <input type="text" name="Kx" value="0">
+            <label>$K_y=$</label>
+            <input type="text" name="Ky" value="0">
+            <br /><br />
+            <br /><br />
+            <button class="compute" type="button">Compute</button>
+            <button class="reset" type="button" >Reset</button>
+            <button class="exit" type="button">Exit</button>
+            <br /><br />
+        </p>
+        <!-- Click on the <span> element to close the tab -->
+        <span onclick="this.parentElement.style.display='none'">^</span>
+    </div>
+      
+    <div id="TripleIntegral" class="tabcontent1">
+        <h3>Triple Integral</h3>
+        <p>
+            <br />Give the function $f(x,y,z)$ for integration:<br />
+            <label>$f(x,y,z)=$</label>
+            <input type="text" name="f" value="">
+            <br /><br />
+            <br />Choose type of coordinates:<br />
+            <button class="choose" type="button">Cartesian</button>
+            <button class="choose" type="button">Sperical</button>
+            <button class="choose" type="button">Ellipsoidal</button>
+            <br /><br />
+            <br />Insert Edges:<br />
+            <label>$x_1=$</label>
+            <input type="text" name="x1" value="">
+            <label>$x_2=$</label>
+            <input type="text" name="x2" value="">
+            <br /><br />
+            <label>$y_1=$</label>
+            <input type="text" name="y1" value="">
+            <label>$y_2=$</label>
+            <input type="text" name="y2" value="">
+            <br /><br />
+            <br />Insert Edges:<br />
+            <label>$r_1=$</label>
+            <input type="text" name="x1" value="">
+            <label>$r_2=$</label>
+            <input type="text" name="x2" value="">
+            <br /><br />
+            <label>$\theta_1=$</label>
+            <input type="text" name="y1" value="">
+            <label>$\theta_2=$</label>
+            <input type="text" name="y2" value="">
+            <br /><br />
+            <br />Center of coordinate system ( default is K(0,0)) :<br />
+            <label>$K_x=$</label>
+            <input type="text" name="x1" value="">
+            <label>$K_y=$</label>
+            <input type="text" name="x2" value="">
+            <br /><br />
+            <br />Length of axes for elliptical coordinates (default (a=1,b=1)):<br />
+            <label>$a=$</label>
+            <input type="text" name="y1" value="">
+            <label>$b=$</label>
+            <input type="text" name="y2" value="">
+            <br /><br />
+            <br /><br />
+            <button class="compute" type="button">Compute</button>
+            <button class="reset" type="button" >Reset</button>
+            <button class="exit" type="button">Exit</button>
+            <br /><br />
+        </p>
+        <span onclick="this.parentElement.style.display='none'">^</span>
+    </div>
+      
+    <div id="LineIntegral" class="tabcontent1">
+        <h3>Line Integral</h3>
+        <p>
+            .
+        </p>
+        <span onclick="this.parentElement.style.display='none'">^</span>
+    </div>
+    <script>
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
 </p>
+<p></p>
 
     <!--Bottom begin-->
 
@@ -120,7 +307,7 @@
     <a href="https://github.com/PavlosTzitzos/integrals_calculator">Site's repo</a> &middot; 
     <a href="https://cimi.gr">CIMI</a>
     </div>
-
+    <script type='text/javascript' src="js/tabs.js"></script>
 </body>
 
 </html>
