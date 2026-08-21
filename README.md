@@ -1,5 +1,7 @@
 # integrals_calculator
 
+This is project is no longer maintained. 
+
 ## To Do List
 
 - [ ] fix the bugs and handle the errors properly
